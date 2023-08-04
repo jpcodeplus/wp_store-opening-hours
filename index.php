@@ -1,5 +1,4 @@
 <?php
-// Prevent direct access
 if (!defined('ABSPATH')) exit;
 
 /*
@@ -11,27 +10,4 @@ Author: Jan Behrens (JP | Code Plus)
 Author URI: https://code-plus.media.de/
 */
 
-// Register the autoloader
-spl_autoload_register(function ($class) {
-    $prefix = 'CPM\\';
-    $baseDir = __DIR__ . '/inc/';
-
-    $len = strlen($prefix);
-    if (strncmp($prefix, $class, $len) !== 0) {
-        return;
-    }
-
-    $relativeClass = substr($class, $len);
-    $file = $baseDir . str_replace('\\', '/', $relativeClass) . '.php';
-
-    if (file_exists($file)) {
-        require $file;
-    }
-});
-
-// Use the namespace to avoid conflicts
-use CPM\Base;
-
-// Create a new instance of the PluginBasics class
-(new Base(__FILE__));
-
+require_once(__DIR__.'/inc/init.php');

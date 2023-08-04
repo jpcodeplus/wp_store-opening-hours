@@ -10,4 +10,6 @@ Author: Jan Behrens (JP | Code Plus)
 Author URI: https://code-plus.media.de/
 */
 
-require_once(__DIR__.'/inc/init.php');
+require_once(__DIR__.'/inc/cpm/Init.php');
+
+(new Init(__DIR__));

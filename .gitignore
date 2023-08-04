@@ -1,5 +1,5 @@
 # .gitignore
-
+_next_steps
 # Ignore macOS system files
 .DS_Store
 .AppleDouble

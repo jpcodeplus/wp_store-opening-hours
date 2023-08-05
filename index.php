@@ -11,6 +11,7 @@ Author URI: https://code-plus.media.de/
 */
 
 define('CPM_INCLUDES', __DIR__.'/inc/');
+define('CPM_ASSETS', __DIR__.'/assets/');
 require_once(__DIR__.'/autoloading.php');
 
 (new CPM_Plugin\Init(__DIR__));

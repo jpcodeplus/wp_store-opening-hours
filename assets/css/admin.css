@@ -1,0 +1,15 @@
+#toplevel_page_cpm-plugin a div {
+    background-image: url('../icons/happy.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: .5rem 50%;
+    color: #ffcc00 ;
+}
+#toplevel_page_cpm-plugin a.current div,
+#toplevel_page_cpm-plugin a:hover div{
+    background-image: url('../icons/happy_active.svg');
+    background-size: 22px;
+    background-position: calc(.5rem -2px) 50%;
+    background-color: orange;
+    color: black;
+}

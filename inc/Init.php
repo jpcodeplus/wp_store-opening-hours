@@ -12,7 +12,7 @@ class Init
         add_action('init', [$this, 'init_action']);
         add_action('wp_enqueue_scripts', [$this, 'frontend_scripts']);
         remove_action('wp_head', 'wp_generator');
-
+        
         (new Login());
     }
 

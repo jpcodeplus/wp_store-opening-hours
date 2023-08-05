@@ -106,3 +106,19 @@
 .cpm_topinfo-domain{
     color: #aaa;
 }
+
+
+
+
+.cpm_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 1rem;
+  }
+
+  .cpm_grid div{
+    background-color: #fff;
+    border-radius: .25rem;
+    min-height: 3rem;
+  }
+  

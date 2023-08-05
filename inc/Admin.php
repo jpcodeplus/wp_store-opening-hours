@@ -52,6 +52,7 @@ class Admin
 
         $myurl = explode('://',home_url());
         $datetime = $this->dashboard->datetime();
+        $grid = $this->dashboard->grid();
 
 
         $top_line = "
@@ -67,6 +68,8 @@ class Admin
         <span class='cpm_topinfo-domain'>Domain: $myurl[1]</span>
         <span class='cpm_topinfo-date'>$datetime</span>
         </div>
+
+        $grid
         ";
 
         echo "
@@ -80,6 +83,9 @@ class Admin
         <p class='demo'>Wollkommen im Dashboard von Code Plus</p>
         
         </div>
+
+
+
         ";
     }
 

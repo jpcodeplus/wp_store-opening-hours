@@ -9,6 +9,7 @@ Version: 1.0
 Author: Jan Behrens (JP | Code Plus)
 Author URI: https://code-plus.media.de/
 */
+date_default_timezone_set('Europe/Berlin');
 
 define('CPM_INCLUDES', __DIR__.'/inc/');
 define('CPM_ASSETS', __DIR__.'/assets/');

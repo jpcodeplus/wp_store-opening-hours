@@ -1,6 +1,6 @@
-/* #wpadminbar {
+#wpadminbar {
     display: none;
-} */
+}
 
 #wpwrap {
     top: -2rem;
@@ -25,4 +25,84 @@
 }
 
 
-#footer-thankyou a{}
+#footer-thankyou a {}
+
+
+.cpm_dashboard {
+    margin: 1.5rem;
+    margin-left: 0;
+}
+
+.cpm_topline {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .1);
+    min-height: 1rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .25rem;
+}
+
+
+.top-links {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: .5rem;
+}
+
+.top-links a {
+    width: 1.75rem;
+    height: 1.75rem;
+    background-color: #ffcc00;
+    display: block;
+    overflow: hidden;
+    border-radius: .25rem;
+    background-size: 70%;
+    text-indent: -99999px;
+    background: 50% 50% no-repeat #efefef;
+    background-size: 80%;
+    opacity: .8;
+}
+
+.top-links a:hover {
+    opacity: 1;
+    background-color: #ffcc00;
+}
+
+.cpm_topline .link_website {
+    background-image: url(./../icons/dashboard/website.svg);
+    background-size: 70%;
+}
+
+.cpm_topline .link_logout {
+    background-image: url(./../icons/dashboard/logout.svg);
+}
+
+.cpm_topline .link_profil{
+    background-image: url(./../icons/dashboard/profil.svg);
+}
+
+.cpm_topline .greeting {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    padding: .5rem;
+}
+
+
+
+.cpm_topinfo{
+    font-size: .825rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto .5rem;
+    padding: .5rem 0;
+}
+
+
+
+.cpm_topinfo-domain{
+    color: #aaa;
+}

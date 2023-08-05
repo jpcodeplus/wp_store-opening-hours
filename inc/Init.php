@@ -1,6 +1,9 @@
 <?php
+namespace CPM_Plugin;
 
-class Init
+use CPM_Plugin\Helper\Demo;
+
+class Init extends Demo
 {
 
     protected $plugin_base;
@@ -10,16 +13,19 @@ class Init
         $this->plugin_base = $plugin_base;
         add_action('init', [$this, 'init_action']);
         add_action('wp_enqueue_scripts', [$this, 'enqueue_scripts']);
+
+        $demo = new Demo();
+        $demo->sayHey();
     }
 
     function init_action()
     {
-        echo $this->plugin_base;
+        // echo $this->plugin_base;
     }
 
     function enqueue_scripts()
     {
-        $folder = '../../assets/';
+        $folder = '../assets/';
 
         $plugin["url"] = plugin_dir_url(__FILE__) . $folder;
         $plugin["path"] = plugin_dir_path(__FILE__) . $folder;

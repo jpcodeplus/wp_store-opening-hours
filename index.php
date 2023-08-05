@@ -10,6 +10,7 @@ Author: Jan Behrens (JP | Code Plus)
 Author URI: https://code-plus.media.de/
 */
 
-require_once(__DIR__.'/inc/cpm/Init.php');
+define('CPM_INCLUDES', __DIR__.'/inc/');
+require_once(__DIR__.'/autoloading.php');
 
-(new Init(__DIR__));
+(new CPM_Plugin\Init(__DIR__));

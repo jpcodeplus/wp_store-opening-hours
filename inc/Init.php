@@ -11,11 +11,15 @@ class Init
         $this->plugin_base = $plugin_base;
         add_action('init', [$this, 'init_action']);
         add_action('wp_enqueue_scripts', [$this, 'frontend_scripts']);
+        remove_action('wp_head', 'wp_generator');
+
+        (new Login());
     }
 
     function init_action()
     {
         (new Admin());
+       
     }
 
     function frontend_scripts()

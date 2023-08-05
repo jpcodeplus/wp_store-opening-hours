@@ -1,9 +1,7 @@
 <?php
 namespace CPM_Plugin;
 
-use CPM_Plugin\Helper\Demo;
-
-class Init extends Demo
+class Init
 {
 
     protected $plugin_base;
@@ -13,9 +11,6 @@ class Init extends Demo
         $this->plugin_base = $plugin_base;
         add_action('init', [$this, 'init_action']);
         add_action('wp_enqueue_scripts', [$this, 'enqueue_scripts']);
-
-        $demo = new Demo();
-        $demo->sayHey();
     }
 
     function init_action()
